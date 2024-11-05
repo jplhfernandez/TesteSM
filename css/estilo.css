@@ -1,0 +1,352 @@
+/* cabecalho.php */
+#logo
+{
+  width: 100%;
+  height: 150px ;
+}
+
+#pesquisa
+{
+  margin-top: 16px;
+  margin-left: 1%;
+}
+.text-end
+{
+  margin-top: 16px;
+  margin-left: 1%; 
+}
+
+hr
+{
+  border: 1px solid #252525;
+  width: 100%;
+
+}
+
+/* definindo nosso estilo do projeto... */
+
+
+body{
+    margin-top: 40px;
+    padding-top: 40px;
+}
+.fundofixo{
+    background: url('../images/churrascaria.jpg') no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;    
+}
+.fundo-branco{
+    background-color: aliceblue;
+}
+
+/* Estilo geral */
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* cor de fundo suave */
+    color: #343a40; /* texto padrão */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo da sidebar */
+.col-left 
+{
+ 
+    padding: 15px;
+   
+}
+
+/* Título das categorias */
+.bx-title h2 
+{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+/* Lista de categorias */
+.cd-accordion-menu 
+{
+    list-style-type: none; /* remove marcadores */
+    padding: 0;
+}
+
+.cd-accordion-menu li 
+{
+    margin-bottom: 30px; /* espaçamento entre itens */
+    display: flex; /* para alinhar ícones e textos */
+    align-items: center; /* centraliza verticalmente */
+}
+
+.cd-accordion-menu img.icone 
+{
+    width: 30px; /* largura do ícone */
+    height: 30px; /* altura do ícone */
+    margin-right: 10px; /* espaço entre ícone e texto */
+}
+
+/* Links */
+.cd-accordion-menu a 
+{
+    text-decoration: none; /* remove sublinhado */
+    color: black; /* azul para links */
+    transition: color 0.3s; /* animação suave */
+}
+
+.cd-accordion-menu a:hover 
+{
+    color: #0056b3; /* cor mais escura ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) 
+{
+    .col-left 
+    {
+      padding: 10px; /* menos padding em telas menores */
+    }
+
+    .cd-accordion-menu li 
+    {
+      flex-direction: column; /* empilha ícone e texto */
+      align-items: flex-start; /* alinha à esquerda */
+    }
+
+}
+
+/* css da pagina index */
+
+/* css para deixar todos os elementos alinhado */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 1200px; /* Defina a largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 20px; /* serve para Adicionar espaço interno */  
+}
+
+.card {
+  margin: 10px; /* Espaço entre os cards */
+  text-align: center; /* Centraliza o texto dentro do card */
+}
+
+h1, h2 {
+  text-align: center; /* Centraliza os títulos */
+  margin-bottom: 20px; /* Espaço abaixo dos títulos */
+}
+
+.carousel-control-prev{
+  left: 20%;
+}
+
+.carousel-control-next{
+  left: 65%;
+}
+
+.carousel-inner
+{
+  margin-top: 20px ;
+  height: 40%;
+  width: 50%;
+  margin-left: 25%;
+}  /* css do carrossel */
+
+
+.produtos-destaques 
+{
+  margin-left: 15px;
+  margin-top: 100px;
+
+}
+
+  .destaques 
+  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: center; /* Centraliza os elementos na linha */
+    box-sizing: border-box;
+    max-width: 70%; /* Limite para que as divs não fiquem muito grandes */
+    margin-left: 15%;
+  }
+  
+  
+
+.img_destaques
+{
+  margin-left: 20%;
+}
+
+.catalogo{
+ width: 260px;
+ left: 100px;
+ margin-left: 860px;
+ margin-top: 80px;
+ 
+}
+
+
+
+
+/* começo do css da pagina produtos */
+
+.topo-produtos
+{
+  margin-top: 10px;
+}
+ 
+  .card 
+  {
+    background-color: #fff;
+    width: 20%;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+    margin-right: 15px;
+    margin-top: 50px;
+  }
+
+  .card img 
+  {
+    width: 150px;
+    height: 120px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .card div 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;          
+    gap: 4px;
+    height: 50%;
+    
+ 
+  }
+
+  .card h1 
+  {
+    font-size: 1.2rem;
+  }
+
+  .card h2 
+  {
+    font-size: .9rem;
+    color: #aaaa;
+  }
+
+
+  .btn-comprar
+  {
+    background-color: #01a317;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+
+  .card button:hover 
+  {
+    background-color: #7c7c7c;
+    cursor: pointer;
+  }
+
+/* copos */
+
+.copos
+{
+  margin-top: 10px;
+  
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 150%;
+  }
+}
+
+
+
+/* fim do css dos produtos */
+
+
+/*CSS Quem Somos*/
+.mb-4{
+  text-align: justify;
+}
+
+
+/* rodape.php */
+.fundo-rodape 
+{
+    padding-top: 20px;    
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.redes_sociais
+{
+    color: #ddd;
+}
+
+.redes_sociais 
+{
+    text-decoration: none; /* Remove a linha de sublinhado */
+    color: white; /* Mantém a cor do texto como está */
+}
+
+a 
+{
+    text-decoration: none; /* Remove a linha de sublinhado para todos os links */
+}
+
+.header-title
+{
+  color: #343a40;
+}
+
+
+.form-container {
+  max-width: 400px;
+  padding: 1rem;  /* css da página login */
+  width: 100%; 
+}
+
+h4
+{
+  text-align: center;
+}
+
+.nav-item
+{
+  text-align: center;
+}
+.imagens_redes_sociais
+{
+  flex-direction: column;
+}
+
+.redes_sociais
+{
+  padding: 5px;
+  
+}
+
+.icons
+{
+  background:rgb(255, 153, 0);
+}
+
