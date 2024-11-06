@@ -1,55 +1,50 @@
-<main class="admin-container">
-  <h1 class="admin-title">Área Administrativa</h1>
+<link rel="stylesheet" href="../css/estilo.css">
+<main class="admin-container-adm">
+  <h1></h1>
+  <h1 class="admin-title-adm">Área Administrativa</h1>
 
-  <!-- Breadcrumb -->
-  <nav class="breadcrumb-container">
-    <ul class="breadcrumb">
-      <li class="breadcrumb-item active">Área Administrativa</li>
-    </ul>
-  </nav>
-
-  <div class="row">
+  <div class="caixa-tela-adm">
 
     <!-- ADM PRODUTOS -->
-    <div class="col">
-      <div class="card card-produtos">
-        <img src="../img/logo.png" alt="Imagem de Produtos" class="card-img">
-        <div class="card-body">
-          <h5 class="card-title">PRODUTOS</h5>
+    <div class="caixa-adm">
+      <div class="card-adm">
+        <img src="../img/produto.svg" alt="Imagem de Produtos" class="card-img-adm">
+        <div class="card-body-adm">
+          <h5 class="card-tit-adm">PRODUTOS</h5>
           <h1></h1>
-          <div class="card-buttons">
-            <a href="produtos_lista.php" class="btn btn-produtos">LISTAR</a>
-            <a href="produtos_insere.php" class="btn btn-produtos">INSERIR</a>
+          <div class="card-botão-adm">
+            <a href="lista_produtos.php" class="btn-adm btn-produtos">LISTAR</a>
+            <a href="insere_usuarios.php" class="btn-adm btn-produtos">INSERIR</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ADM TIPOS -->
-    <div class="col">
-      <div class="card card-tipos">
-        <img src="../img/logo.png" alt="Imagem de Tipos" class="card-img">
-        <div class="card-body">
-          <h5 class="card-title">TIPOS</h5>
+    <!-- ADM CATEGORIA -->
+    <div class="caixa-adm">
+      <div class="card-adm">
+        <img src="../img/categoria.svg" alt="Imagem de Categoria" class="card-img-adm">
+        <div class="card-body-adm">
+          <h5 class="card-tit-adm">CATEGORIA</h5>
           <h1></h1>
-          <div class="card-buttons">
-            <a href="tipos_lista.php" class="btn btn-tipos">LISTAR</a>
-            <a href="tipos_insere.php" class="btn btn-tipos">INSERIR</a>
+          <div class="card-botão-adm">
+            <a href="lista_categorias.php" class="btn-adm btn-categorias">LISTAR</a>
+            <a href="insere_usuarios.php" class="btn-adm btn-categorias">INSERIR</a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- ADM USUÁRIOS -->
-    <div class="col">
-      <div class="card card-usuarios">
-        <img src="../img/logo.png" alt="Imagem de Usuários" class="card-img">
-        <div class="card-body">
-          <h5 class="card-title">USUÁRIOS</h5>
+    <div class="caixa-adm">
+      <div class="card-adm">
+        <img src="../img/user.svg" alt="Imagem de Produtos" class="card-img-adm">
+        <div class="card-body-adm">
+          <h5 class="card-tit-adm">USUÁRIOS</h5>
           <h1></h1>
-          <div class="card-buttons">
-            <a href="usuarios_lista.php" class="btn btn-usuarios">LISTAR</a>
-            <a href="usuarios_insere.php" class="btn btn-usuarios">INSERIR</a>
+          <div class="card-botão-adm">
+            <a href="lista_usuarios.php" class="btn-adm btn-usuarios">LISTAR</a>
+            <a href="insere_usuarios.php" class="btn-adm btn-usuarios">INSERIR</a>
           </div>
         </div>
       </div>

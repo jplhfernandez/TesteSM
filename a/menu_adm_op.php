@@ -10,16 +10,16 @@
           <img id="logo" src="../img/logo.png" alt="mds">
         </a>
         </ul>
-        <li><a href="../index.php" class="nav-link px-2 text-dark">Página Inicial</a></li>
-          <li><a href="../quemsomos.php" class="nav-link px-2 text-dark">Quem Somos</a></li>
-          <li><a href="../produtos.php" class="nav-link px-2 text-dark">Produtos</a></li>  
+        <li><a href="lista_produtos.php" class="nav-link px-2 text-dark">Produtos</a></li>
+          <li><a href="lista_categoria.php" class="nav-link px-2 text-dark">Categoria</a></li>
+          <li><a href="lista_usuarios.php" class="nav-link px-2 text-dark">Usuários</a></li>  
         <!-- Botões de login e cadastro -->
         <div class="text-end">
           <a href="../index.php">
-            <img src="../img/home.svg" alt="HOME">
+            <img class="icon-img" src="../img/home.svg" alt="HOME">
           </a>
           <a href="logout.php">
-            <img src="../img/logout.svg" alt="LOGOUT">
+            <img class="icon-img" src="../img/logout.svg" alt="LOGOUT">
           </a>
       </div>
       <hr>

@@ -270,8 +270,6 @@ h1, h2 {
 
 }
 
-
-
 @media only screen and (max-width: 768px) {
   .card {
     width: 150%;
@@ -350,142 +348,143 @@ h4
   background:rgb(255, 153, 0);
 }
 
-/*CSS ADM*/
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/*CSS BRABO ADM*/
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-}
 
-/* Container principal */
-.admin-container {
+/* Contêiner principal */
+.admin-container-adm {
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
-/* Título da área administrativa */
-.admin-title {
+/* Título principal */
+.admin-title-adm {
   text-align: center;
-  font-size: 2rem;
+  font-size: 36px;
+  margin-bottom: 30px;
   color: #333;
+  font-weight: bold;
+}
+
+/* Caixa de conteúdo */
+.caixa-tela-adm {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Card de cada seção */
+.caixa-adm {
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 
-/* Breadcrumb */
-.breadcrumb-container {
-  margin-bottom: 30px;
-}
-
-.breadcrumb {
-  list-style-type: none;
-  padding-left: 0;
+.card-adm {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
-.breadcrumb-item {
-  margin-right: 10px;
-}
-
-.breadcrumb-item.active {
-  font-weight: bold;
-}
-
-/* Grid de cartões */
-.row {
+/* Imagem do card */
+.card-img-adm {
+  width: 50%;
+  height: 60%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
 }
 
-.col {
-  flex: 1 1 30%;
-  min-width: 700px;
-}
-
-/* Estilo dos cartões */
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.5s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card-img {
+.card-img-adm img {
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
 }
 
-.card-body {
-  width: 100%;
-  height: 100%;
+/* Corpo do card */
+.card-body-adm {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-tit-adm,
+.card-title-adm {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+  justify-content: center;
   text-align: center;
 }
 
-.card-title {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-/* Estilo dos botões */
-.card-buttons {
+/* Botões dentro do card */
+.card-botão-adm {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 10px;
 }
 
-.card-buttons .btn {
-  padding: 10px 20px;
+/* Estilo de botões */
+.btn-adm {
   text-decoration: none;
-  font-weight: bold;
-  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
   border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  display: flex;
   transition: background-color 0.3s ease;
 }
 
-.card-buttons .btn-produtos {
-  background-color: #dc3545;
+.btn-produtos {
+  background-color: #28a745;
 }
 
-.card-buttons .btn-produtos:hover {
-  background-color: #c82333;
+.btn-produtos:hover {
+  background-color: #218838;
 }
 
-.card-buttons .btn-tipos {
-  background-color: #ffc107;
-}
-
-.card-buttons .btn-tipos:hover {
-  background-color: #e0a800;
-}
-
-.card-buttons .btn-usuarios {
+.btn-categorias {
   background-color: #17a2b8;
 }
 
-.card-buttons .btn-usuarios:hover {
+.btn-categorias:hover {
   background-color: #138496;
+}
+
+.btn-usuarios {
+  background-color: #ffc107;
+  display: flex;
+}
+
+.btn-usuarios:hover {
+  background-color: #e0a800;
+}
+
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .col {
-    flex: 1 1 100%;
+  .caixa-tela {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caixa {
+    margin-bottom: 20px;
   }
 }
