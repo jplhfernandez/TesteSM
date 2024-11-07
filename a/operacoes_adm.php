@@ -14,7 +14,7 @@
           <h1></h1>
           <div class="card-botão-adm">
             <a href="lista_produtos.php" class="btn-adm btn-produtos">LISTAR</a>
-            <a href="insere_usuarios.php" class="btn-adm btn-produtos">INSERIR</a>
+            <a href="insere_produtos.php" class="btn-adm btn-produtos">INSERIR</a>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@
           <h1></h1>
           <div class="card-botão-adm">
             <a href="lista_categorias.php" class="btn-adm btn-categorias">LISTAR</a>
-            <a href="insere_usuarios.php" class="btn-adm btn-categorias">INSERIR</a>
+            <a href="insere_categorias.php" class="btn-adm btn-categorias">INSERIR</a>
           </div>
         </div>
       </div>
