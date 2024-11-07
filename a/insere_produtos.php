@@ -1,12 +1,12 @@
 <?php 
-//include 'acesso_com.php';
-//include '../conn/connect.php';
+include 'acesso_com.php';
+include '../banco/connect.php';
 if($_POST){
     if(isset($_POST['enviar'])){
         $nome_img = $_FILES['imagemfile']['name'];
         $tmp_img = $_FILES['imagemfile']['tmp_name'];
         $rand = rand(100001,999999);
-        $dir_img = "../images/".$rand.$nome_img;
+        $dir_img = "../img/ADM".$rand.$nome_img;
         move_uploaded_file($tmp_img,$dir_img);
     }
 
@@ -28,7 +28,7 @@ if($_POST){
     }
 }
 // selecionar a lista de tipos para preencher o <select>
-$listaTipo = $conn->query("select * from tipos order by rotulo");
+$listaTipo = $conn->query("select * from categorias order by rotulo");
 $rowTipo = $listaTipo->fetch_assoc();
 $numLinhas = $listaTipo->num_rows;
 
