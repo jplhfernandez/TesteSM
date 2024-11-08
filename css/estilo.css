@@ -577,7 +577,7 @@ h4
 }
 
 /* Card de cada produto */
-.card-produto {
+.card-produto-lista {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -585,34 +585,34 @@ h4
   overflow: hidden;
 }
 
-.card-produto img {
+.card-produto-lista img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.card-produto-body {
+.card-produto-lista-body {
   padding: 15px;
 }
 
-.card-produto-body h5 {
+.card-produto-lista-body h5 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.card-produto-body p {
+.card-produto-lista-body p {
   font-size: 14px;
   color: #777;
 }
 
-.card-produto-footer {
+.card-produto-lista-footer {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
 
-.card-produto-footer .btn {
+.card-produto-lista-footer .btn {
   width: 48%;
 }
 
@@ -650,3 +650,19 @@ h4
   }
 }
 /*se alguem ler isso pfv me socorra*/
+
+/*CSS do Insert*/
+/* Geral */
+.container-inserir{
+  width: 50%;
+  height: 50%;
+}
+
+.bi{
+  margin: 9px !important;
+}
+
+#destaque{
+  margin: 5px !important;
+}
+/*FIM CSS INSERT*/

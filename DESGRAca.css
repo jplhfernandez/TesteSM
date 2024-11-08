@@ -1,0 +1,144 @@
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Principal */
+.container-insere {
+    padding: 20px;
+}
+
+/* Título */
+.breadcrumb-insere {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-insere a {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb-insere a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-insere button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
+}
+
+/* Caixa de Formulário */
+.thumbnail-insere {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-insere .alert {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.thumbnail-insere form {
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail-insere label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+/* Inputs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group-addon {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 5px 0 0 5px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Botões */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    cursor: pointer;
+}
+
+.btn-block {
+    width: 100%;
+    padding: 15px;
+}
+
+/* Input File */
+#imagemfile {
+    margin-top: 10px;
+}
+
+/* Imagem */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Radio buttons */
+.radio-inline {
+    margin-right: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .col-xs-12 {
+        padding: 0 10px;
+    }
+
+    .breadcrumb-insere {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .thumbnail-insere {
+        padding: 15px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+}
