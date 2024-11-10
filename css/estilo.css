@@ -497,6 +497,11 @@ h4
   padding: 0;
 }
 
+.add{
+  width: 10% !important;
+  height: 10% !important;
+}
+
 .container-lista {
   width: 100%;
   max-width: 1200px;
