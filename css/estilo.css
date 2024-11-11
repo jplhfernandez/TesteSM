@@ -654,6 +654,15 @@ h4
     font-size: 24px;
   }
 }
+thead {
+  background-color: #d7e2dd;
+  border-bottom: 2px solid #333;
+}
+th, td {
+  padding: 12px; /* Ajuste o valor conforme desejado */
+}
+
+
 /*se alguem ler isso pfv me socorra*/
 
 /*CSS do Insert*/
@@ -670,4 +679,5 @@ h4
 #destaque{
   margin: 5px !important;
 }
+
 /*FIM CSS INSERT*/
