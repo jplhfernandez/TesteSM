@@ -107,12 +107,12 @@ $rows = $lista -> num_rows;
     </main>
 
     <!-- Modal de confirmação de exclusão -->
-    <div class="modal fade" id="modalEdit" role="dialog">
+    <div class="modal fade" id="modalEdit" tabindex="-1" aria-labelledby="modalEditLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4>Vamos deletar?</h4>
-                    <button class="close" data-dismiss="modal" type="button">&times;</button>
+                    <h5 class="modal-title" id="modalEditLabel">Vamos deletar?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
                     Deseja mesmo excluir o item?
@@ -120,11 +120,12 @@ $rows = $lista -> num_rows;
                 </div>
                 <div class="modal-footer">
                     <a href="#" class="btn btn-danger delete-yes">Confirmar</a>
-                    <button class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cancelar</button>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -134,7 +135,7 @@ $rows = $lista -> num_rows;
             var nome = $(this).data('nome'); // busca o nome do produto
             var id = $(this).data('id'); // busca o id do produto
             $('span.nome').text(nome); // insere o nome no modal
-            $('a.delete-yes').attr('href', 'produtos_excluir.php?id=' + id); // define o link de exclusão
+            $('a.delete-yes').attr('href', 'delete_produtos.php?id=' + id); // define o link de exclusão
             $('#modalEdit').modal('show'); // exibe o modal
         });
     </script>
