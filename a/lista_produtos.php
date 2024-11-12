@@ -82,12 +82,6 @@ $rows = $lista -> num_rows;
                                 <span class="hidden-xs">ALTERAR</span>    
                             </a>
                             <!-- Botão excluir -->
-                            <!-- não mostrar o botão excluir se o produto estiver em destaque -->
-                                <?php  
-                                    $regraExcluir = $conn->query("select destaque from vw_produtos where produto_id =".$row['produto_id']);
-                                    $regraRow = $regraExcluir->fetch_assoc();
-                                ?>
-
                             <button 
                                 data-nome="<?php echo $row['nome_produto']; ?>"
                                 data-id="<?php echo $row['produto_id']; ?>"
@@ -115,11 +109,11 @@ $rows = $lista -> num_rows;
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalEditLabel">Vamos deletar?</h5>
+                    <h5 class="modal-title" id="modalEditLabel">Excluindo Item</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
-                    Deseja mesmo excluir o item?
+                    Deseja mesmo excluir o item? Saiba, essa ação não pode ser desfeita.
                     <h4><span class="nome text-danger"></span></h4>
                 </div>
                 <div class="modal-footer">
